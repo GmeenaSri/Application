@@ -1,0 +1,36 @@
+public List<Employee>getAll();
+
+public List<Student> getAllStudent() {
+		List<Student>allStudents=repo.findAll();
+		return allStudents;
+
+@RequestMapping("/viewAllStudents")
+	public String viewAllStudent(ModelMap model)
+	{
+		model.put("Students", service.getAllStudent());
+		return "viewStudent";
+	}
+public List<User> getAll() {
+		// TODO Auto-generated method stub
+			List<User>allCustomers=repo.findAll();
+			return allCustomers;
+	}
+
+	@Override
+	public void deleteOne(String firstName) {
+		// TODO Auto-generated method stub
+		repo.deleteById(firstName);
+		return;
+
+
+
+User u=repo.save(user);
+	
+		return u;
+
+List<User>allCustomers=repo.findAll();
+		return allCustomers;
+
+repo.deleteById(firstName);
+		return ;
+
